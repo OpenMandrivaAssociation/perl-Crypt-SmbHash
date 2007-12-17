@@ -8,7 +8,6 @@ Group:		Development/Perl
 Source0:	http://www.cpan.org/modules/by-module/Crypt/Crypt-SmbHash-%{version}.tar.bz2
 BuildRequires:	perl-devel
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 This module provides functions to generate LM/NT hashes used in
