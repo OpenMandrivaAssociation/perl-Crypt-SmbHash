@@ -1,21 +1,25 @@
+%define upstream_name    Crypt-SmbHash
+%define upstream_version 0.12
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Crypt::SmbHash Perl module - generate LM/NT hashes like smbpasswd
-Name:		perl-Crypt-SmbHash
-URL:		http://search.cpan.org/dist/Crypt-SmbHash/
-Version:	0.12
-Release:	%mkrel 4
 License:	GPL
 Group:		Development/Perl
-Source0:	http://www.cpan.org/modules/by-module/Crypt/Crypt-SmbHash-%{version}.tar.bz2
-BuildRequires:	perl-devel
+Url:		http://search.cpan.org/dist/Crypt-SmbHash/
+Source0:	http://www.cpan.org/modules/by-module/Crypt/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module provides functions to generate LM/NT hashes used in
 Samba's 'password' files, like smbpasswd.
 
 %prep
-%setup -q -n Crypt-SmbHash-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
