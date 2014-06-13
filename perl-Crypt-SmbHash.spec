@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	10
+Release:	11
 
 Summary:	Crypt::SmbHash Perl module - generate LM/NT hashes like smbpasswd
 License:	GPL
