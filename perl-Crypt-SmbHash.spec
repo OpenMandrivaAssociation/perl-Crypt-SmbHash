@@ -8,7 +8,7 @@ Release:	17
 Summary:	Crypt::SmbHash Perl module - generate LM/NT hashes like smbpasswd
 License:	GPL
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/Crypt-SmbHash/
+Url:		https://search.cpan.org/dist/Crypt-SmbHash/
 Source0:	http://www.cpan.org/modules/by-module/Crypt/%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	perl(Test)
