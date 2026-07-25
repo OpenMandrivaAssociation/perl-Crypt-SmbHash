@@ -2,14 +2,14 @@
 %define upstream_version 0.12
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	17
+Version:	%{upstream_version}
+Release:	18
 
 Summary:	Crypt::SmbHash Perl module - generate LM/NT hashes like smbpasswd
 License:	GPL
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/Crypt-SmbHash/
-Source0:	http://www.cpan.org/modules/by-module/Crypt/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/Crypt-SmbHash
+Source0:	https://cpan.metacpan.org/authors/id/B/BJ/BJKUIT/Crypt-SmbHash-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(Test)
